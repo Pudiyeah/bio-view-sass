@@ -1,0 +1,195 @@
+// * {
+//     box-sizing: border-box;
+//     padding: $padding ;
+//     margin: $margin;
+// }
+
+// body {
+//     width: $body-width;
+//     display: flex;
+//     justify-content: center;
+// }
+
+// body {
+//     .main {
+//         width: $main-width;
+//         height: $main-height;
+//         border-radius: $border-radius;
+//         margin-top: 35px;
+//         overflow: hidden;
+//         background: linear-gradient(188deg, $gradient-color-top2, $gradient-color-top 0%, white 27%, white 73%, $gradient-color-bottom 100%);
+
+//         .profile {
+//             display: flex;
+//             justify-content: center;
+
+//         }
+//         img {
+//             object-fit: cover;
+//             width: $img;
+//             height: $img;
+//             border-radius: 50%;
+//             border: 2px solid $color-first;
+//             margin-top: 65px;
+//         }
+
+//         p {
+//             text-align: $txt-align;
+//             margin-top: 30px;
+//             font-family: $txt-font;
+//             font-size: larger;
+//         }
+
+//         .line {
+//             display: flex;
+//             justify-content: center;
+//             border: 1px solid $color-second;
+//             margin: 12px;
+//             margin-right: $line-margin;
+//             margin-left: $line-margin;
+//         }
+
+//         .text {
+//             font-family: $txt-font;
+//             text-align: $txt-align;
+//             padding: 15px;
+//         }
+
+//         button {
+//             a {
+//                 text-decoration: none;
+//                 display: flex;
+//                 justify-content: $a-justify;
+//             }
+
+//             i {
+//                 border: 2px solid $button-border-color;
+//                 border-radius: 50%;
+//                 margin: 15px;
+//                 padding: 13px;
+//                 color: $button-border-color;
+//                 font-size: 28px;
+
+//                 :hover {
+//                     color: $color-second;
+//                     transition: 0.7s;
+//                 }
+//             }
+//         }
+
+//         .footer {
+//             a {
+//                 display: flex;
+//                 justify-content: $a-justify;
+//                 color: $color-first;
+//                 margin-top: 70px;
+//                 font-size: 21px;
+//                 text-decoration: none;
+//             }
+
+//             i {
+//                 :hover {
+//                     color: $color-second;
+//                     transition: 0.7s;
+//                 }
+//             }
+//         }
+//     }
+
+// }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: $body-width;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: $main-width;
+    height: $main-height;
+    border-radius: $main-border-radius;
+    margin-top: 35px;
+    overflow: hidden;
+    background: linear-gradient(188deg, $gradient-color-top2 , $gradient-color-top 0%, white 27%, white 73%, $gradient-color-bottom 100%);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+    width: $img;
+    height: $img;
+    border-radius: 50%;
+    border: 2px solid $color-first;
+    margin-top: 65px;
+}
+
+p {
+    text-align: $txt-align;
+    margin-top: 30px;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.line {
+    border: 1px solid black;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    margin-right: $line-margin;
+    margin-left: $line-margin;
+}
+
+.text {
+    font-family: cursive;
+    text-align: $txt-align;
+    padding: 15px;
+}
+
+.button {
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    i {
+        border: 2px solid #ed95e7;
+        border-radius: 50%;
+        margin: 15px;
+        padding: 13px;
+        color: #ed95e7;
+        font-size: 28px;
+
+        &:hover {
+            color: $color-second;
+            transition: 0.7s;
+        }
+    }
+}
+
+.footer {
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: $a-justify;
+        margin-top: 70px;
+        font-size: 21px;
+        color: $color-first;
+    }
+
+    i {
+        &:hover {
+            color: $color-second;
+            transition: 0.7s;
+        }
+    }
+}
